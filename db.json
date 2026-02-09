@@ -1,88 +1,148 @@
 {
   "data": [
     {
-      "id": "001",
-      "label": "IdentificationType",
-      "documents": [
+      "Id": "DOC-1",
+      "DocumentName": "Identity Documents",
+      "IsRequired": true,
+      "DoesExist": null,
+      "IsAllowedUpdate": true,
+      "IsAllowedMultiple": false,
+      "MandaryDocumentsCount": 1,
+      "AllowedFileExtensions": [
+        ".pdf",
+        ".docx",
+        ".jpg",
+        ".png"
+      ],
+      "Documents": [
         {
-          "id": "001",
-          "label": "CitizenShip",
-          "documents": [
+          "DocumentId": 1001,
+          "DocumentName": "Citizenship",
+          "DocumentIndex": "",
+          "IsAllowedMultiple": true,
+          "IsAllowedUpdate": false,
+          "IsRequired": false,
+          "CreatedBy": "Jenish.Tamrakar",
+          "CreatedDate": "2024-01-15T10:30:00Z",
+          "SubDocuments": [
             {
-              "label": "CitizenShip-Front",
-              "documentIndex": "0011"
+              "DocumentId": 10011,
+              "DocumentName": "Citizenship_Front",
+              "DocumentIndex": "47715",
+              "IsAllowedMultiple": false,
+              "IsAllowedUpdate": true,
+              "CreatedBy": "Jenish.Tamrakar",
+              "CreatedDate": "2024-01-15T10:30:00Z"
             },
             {
-              "label": "CitizenShip-Back",
-              "documentIndex": "0012"
+              "DocumentId": 10012,
+              "DocumentName": "47578",
+              "DocumentIndex": "Citizenship_Back",
+              "IsAllowedMultiple": false,
+              "IsAllowedUpdate": true,
+              "CreatedBy": "Jenish.Tamrakar",
+              "CreatedDate": "2024-01-15T10:30:00Z"
             }
-          ],
-          "allowMultiple": true,
-          "allowUpdate": true,
-          "allowDelete": true
+          ]
         },
         {
-          "id": "002",
-          "label": "Passport",
-          "documents": [
+          "DocumentId": 1002,
+          "DocumentName": "PAN",
+          "DocumentIndex": "",
+          "IsAllowedMultiple": true,
+          "IsAllowedUpdate": true,
+          "IsRequired": false,
+          "CreatedBy": "Jenish.Tamrakar",
+          "CreatedDate": "2024-01-15T10:30:00Z",
+          "SubDocuments": [
             {
-              "label": "Passport-Front",
-              "file": null
+              "DocumentId": 10021,
+              "DocumentName": "Pan_Front",
+              "DocumentIndex": "47715",
+              "IsAllowedMultiple": false,
+              "IsAllowedUpdate": false,
+              "CreatedBy": "Jenish.Tamrakar",
+              "CreatedDate": "2024-01-15T10:30:00Z"
             },
             {
-              "label": "Passport-Back",
-              "file": null
+              "DocumentId": 10022,
+              "DocumentName": "47578",
+              "DocumentIndex": "Pan_Back",
+              "IsAllowedMultiple": false,
+              "IsAllowedUpdate": false,
+              "CreatedBy": "Jenish.Tamrakar",
+              "CreatedDate": "2024-01-15T10:30:00Z"
             }
-          ],
-          "allowMultiple": true,
-          "allowUpdate": true,
-          "allowDelete": true
+          ]
+        },
+        {
+          "DocumentId": 1003,
+          "DocumentName": "DrivingLicense",
+          "DocumentIndex": "47718",
+          "IsAllowedMultiple": true,
+          "IsAllowedUpdate": true,
+          "IsRequired": false,
+          "CreatedBy": "Jenish.Tamrakar",
+          "CreatedDate": "2024-01-15T10:30:00Z",
+          "SubDocuments": null
         }
-      ],
-      "isRequired": true,
-      "no_of_mandatory": 2
+      ]
     },
     {
-      "id": "002",
-      "label": "EducationalDocuments",
-      "documents": [
+      "Id": "DOC-2",
+      "DocumentName": "NOC Documents",
+      "IsRequired": true,
+      "DoesExist": null,
+      "IsAllowedUpdate": true,
+      "IsAllowedMultiple": true,
+      "MandaryDocumentsCount": 5,
+      "AllowedFileExtensions": [
+        ".pdf",
+        ".docx",
+        ".jpg",
+        ".png"
+      ],
+      "Documents": [
         {
-          "id": "002",
-          "label": "DegreeCertificate",
-          "documents": [
+          "DocumentId": 2001,
+          "DocumentName": "Visa",
+          "DocumentIndex": "",
+          "IsAllowedMultiple": true,
+          "IsAllowedUpdate": false,
+          "IsRequired": true,
+          "CreatedBy": "Jenish.Tamrakar",
+          "CreatedDate": "2024-01-15T10:30:00Z",
+          "SubDocuments": [
             {
-              "label": "Bachelor-Degree-Front",
-              "file": null
+              "DocumentId": 20011,
+              "DocumentName": "Visa_Front",
+              "DocumentIndex": "47715",
+              "IsAllowedMultiple": false,
+              "IsAllowedUpdate": true,
+              "CreatedBy": "Jenish.Tamrakar",
+              "CreatedDate": "2024-01-15T10:30:00Z"
             },
             {
-              "label": "Bachelor-Degree-Back",
-              "file": null
+              "DocumentId": 20012,
+              "DocumentName": "Visa_Back",
+              "DocumentIndex": "47578",
+              "IsAllowedMultiple": false,
+              "IsAllowedUpdate": true,
+              "CreatedBy": "Jenish.Tamrakar",
+              "CreatedDate": "2024-01-15T10:30:00Z"
+            },
+            {
+              "DocumentId": 20013,
+              "DocumentName": "Visa_Overall",
+              "DocumentIndex": "47578",
+              "IsAllowedMultiple": false,
+              "IsAllowedUpdate": true,
+              "CreatedBy": "Jenish.Tamrakar",
+              "CreatedDate": "2024-01-15T10:30:00Z"
             }
-          ],
-          "allowMultiple": false,
-          "allowUpdate": true,
-          "allowDelete": false
+          ]
         }
-      ],
-      "isRequired": false,
-      "no_of_mandatory": 1
-    },
-    {
-      "id": "003",
-      "label": "OfferLetter",
-      "documents": [
-        {
-          "id": "003",
-          "label": "offer-letter",
-          "file": null,
-          "allowMultiple": false,
-          "allowUpdate": true,
-          "allowDelete": false
-        }
-      ],
-      "isRequired": true,
-      "no_of_mandatory": 1
+      ]
     }
-  ],
-  "documents": {}
+  ]
 }
